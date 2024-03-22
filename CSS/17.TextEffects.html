@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Effects</title>
+    <style>
+        .bluebox {
+            background-color: #1F7DF3;
+            color: white;
+            height: 100px;
+            width: auto;
+            overflow: hidden; /*cand e hidden, nu se mai vede textul care suprapune container*/
+            /*white-space: nowrap;*/
+            text-overflow: ellipsis; /*apare la final cu puncte puncte*/
+
+        }
+
+        .bluebox:hover{
+            overflow: visible; /*cand trecem cu cursorul peste test, acesta va aparea tot*/
+        }
+        .yellowbox {
+            background-color: #dddd4b;
+            height: 100px;
+            width: 600px;
+            word-break: break-all; /*Ne separa cuvintele*/
+            /* word-break: keep-all;*/
+            overflow: hidden;
+             
+        }
+        .greenbox {
+            background-color:#6eb253;
+            height: 100px;
+            width: auto;
+         
+        }
+        .great {
+            background-color: #5e52b2;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bluebox">
+    FacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebook
+    FacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebook
+    FacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebook
+    FacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebook
+    FacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebook
+    FacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebook
+    FacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebook
+    FacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebook
+    </div>
+    <div class="yellowbox">
+        <p>Apple Apple LoooooooooooongApple AppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleApple LoooooooooooooooooooongAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleApple
+        Apple Apple AppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleAppleApple</p>
+    </div>
+    <div class="greenbox">
+        <p>Microsoft</p>
+    </div>
+</body>
+</html>
